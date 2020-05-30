@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html[data-theme="light"] {
+  --bg-image: url(./src/assets/day.jpeg);
+  --bg-color: rgba(255, 255, 255, 0.6);
+  --text-color: black;
+}
+
+html[data-theme="dark"] {
+  --bg-image: url(./src/assets/night.jpeg);
+  --bg-color:rgba(0, 0, 0, 0.6);
+  --text-color: white;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--bg-image) center/cover;
+}
+
+.time-container {
+  min-width: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 6rem;
+  border-radius: 2rem;
+  background-color: var(--bg-color);
+}
+
+.time-container .time {
+  font-size: 12rem;
+  line-height: 1.1;
+  color: var(--text-color);
+}
+
+.time-container .date {
+  font-size: 2.6rem;
+  color: var(--text-color);
+}
+/*# sourceMappingURL=style.css.map */
